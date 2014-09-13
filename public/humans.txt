@@ -1,0 +1,26 @@
+/* TEAM */
+
+	Chef: Mark N Broadhead 
+	Twitter: @MarkNBroadhead
+	Site: markbroadhead.com
+	From: Orem, Utah, USA
+
+	Developer: Tyler Harris
+	Twitter:
+	From:
+
+	Developer:
+	Twitter:
+	From
+
+/* SITE */
+	Last Update: 2014/09/12
+	Language: English
+	Doctype: HTML5
+	IDE: Sublime Text
+
+/* SPECIAL THANKS */
+
+	David Hamner
+	
+	The humanstxt.org team
