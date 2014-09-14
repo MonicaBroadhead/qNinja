@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html data-ng-app="igor2" lang="en" data-ng-controller="MainCtrl">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Bootstrap core CSS -->
+		<!--<link rel="stylesheet" href="/styles/bootstrapSlate.min.css">-->
+		<link rel="stylesheet" ng-href='{{ stylePath }}'>
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+			<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+			<!--[if lt IE 9]>
+				<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+				<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+			<![endif]-->
+
+		<title>Checking Queue...</title>
+		<link rel="icon" type="image/x-icon" href="/img/favicon.ico" />
+	</head>
+
+	<body>
+		<!--[if lt IE 7]>
+			<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+			<![endif]-->
+		<div class="container">
+			<header class="header">
+				<nav class="nav navbar navbar-default" role="navigation">
+					<div class="container-fluid">
+					<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand" href="#">Igor2</a>
+						</div>
+
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse" id="navbar-collapse">
+							<div id="nav">
+								<ul class="nav navbar-nav navbar-right">
+									<li><a ng-href="#">Queue</a></li>
+									<li><a ng-href="http://houtsapps01.us.netiq.corp/siebelmatic2/" target="_blank">SiebelMatic</a></li>
+									<li><a ng-href="http://lvance1.lab.novell.com/wb/wb1/1.php" target="_blank">Statistics</a></li>
+									<li><a ng-href="http://www.trevman.com/pager/" target="_blank">Pager</a></li>
+									<li><a ng-href="#/resources">Resources</a></li>
+									<li><a ng-href="#/settings"><span class="glyphicon glyphicon-cog"></span></a></li>
+								</ul>
+							</div>
+						</div><!-- /.navbar-collapse -->
+					</div><!-- /.container-fluid -->
+				</nav>
+				<!--<div class="alert alert-info alert-dismissible" role="alert">
+				  	<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+				  	<strong>Vinod: </strong>Important information from bossman!
+				</div>-->
+			</header>
+			<main>
+
+				<div ng-view=""></div>
+
+			</main>
+			<footer class="modal-footer footer">
+				<p class="text-muted credit"><a href="#/about">about</a> | <a href="mailto:mbroadhead@novell.com">contact</a> | copywright 2014</p>
+			</footer>
+		</div> <!-- end div container -->
+
+		<!-- AngularjS -->
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular.min.js"></script>
+		<script src="scripts/lib/angular-route.js"></script>
+
+		<!-- custom scripts-->
+		<script src="/scripts/app.js"></script>
+		<script src="/scripts/queue.js"></script>
+		<script src="/scripts/local.js"></script>
+		<script src="/scripts/controllers/main.js"></script>
+		<!--<script src="/scripts/controllers/queue.js"></script>-->
+		<script src="/scripts/controllers/settings.js"></script>
+		<!-- boostrap -->
+		<script src="/scripts/lib/jquery-2.1.1.min.js"></script>
+		<script src="/scripts/lib/bootstrap.min.js"></script>
+
+		<script>window.onload=function()
+			{setInterval("TitleRefresh()", 3000);}
+		</script>
+	</body>
+</html>
